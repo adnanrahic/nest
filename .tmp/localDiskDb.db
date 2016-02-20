@@ -1,0 +1,158 @@
+{
+  "data": {
+    "user": [
+      {
+        "name": "John Doe",
+        "createdAt": "2016-02-20T10:36:28.277Z",
+        "updatedAt": "2016-02-20T10:36:28.277Z",
+        "id": 1
+      },
+      {
+        "name": "John Notdoe",
+        "createdAt": "2016-02-20T10:40:03.784Z",
+        "updatedAt": "2016-02-20T10:40:03.784Z",
+        "id": 2
+      },
+      {
+        "name": "John debil",
+        "email": "jdoe@gmail.com",
+        "createdAt": "2016-02-20T10:44:47.143Z",
+        "updatedAt": "2016-02-20T10:44:47.143Z",
+        "id": 3
+      }
+    ],
+    "video": [
+      {
+        "title": "title",
+        "createdAt": "2016-02-20T14:18:46.923Z",
+        "updatedAt": "2016-02-20T14:18:46.923Z",
+        "id": 1
+      },
+      {
+        "_csrf": "0hcFaToZ-V-u7ol6kolxcmnQdh9wSw1MtPvk",
+        "id": 2,
+        "createdAt": "2016-02-20T16:25:38.102Z",
+        "updatedAt": "2016-02-20T16:25:38.102Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "id": 3,
+        "createdAt": "2016-02-20T16:27:28.766Z",
+        "updatedAt": "2016-02-20T16:27:28.766Z"
+      },
+      {
+        "title": "title",
+        "id": 4,
+        "createdAt": "2016-02-20T16:53:30.854Z",
+        "updatedAt": "2016-02-20T16:53:30.854Z"
+      },
+      {
+        "submit": "Submit",
+        "_csrf": "r9Du7dCV-d39fZp2M9xL5Ja_mDBYSTaOuirI",
+        "id": 5,
+        "createdAt": "2016-02-20T16:55:03.063Z",
+        "updatedAt": "2016-02-20T16:55:03.063Z"
+      },
+      {
+        "_csrf": "6Th1f1ht-UToOvSJU2itaZ97RPy5pMlOgT2g",
+        "id": 6,
+        "createdAt": "2016-02-20T17:00:08.324Z",
+        "updatedAt": "2016-02-20T17:00:08.324Z"
+      },
+      {
+        "_csrf": "DgWc14C4-At1uTZj3JPeuHw70R_RcexjbYcs",
+        "id": 7,
+        "createdAt": "2016-02-20T17:02:50.080Z",
+        "updatedAt": "2016-02-20T17:02:50.080Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "link": "link",
+        "_csrf": "2eBGULGy-IZ-3FePMSwOPaDrzU4qeF-vOC_s",
+        "id": 8,
+        "createdAt": "2016-02-20T17:08:56.182Z",
+        "updatedAt": "2016-02-20T17:08:56.182Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "link": "link",
+        "_csrf": "ERNUSc8n-5BeWQsmqBiis-N-Yv7xt-JgtP-w",
+        "id": 9,
+        "createdAt": "2016-02-20T17:10:22.842Z",
+        "updatedAt": "2016-02-20T17:10:22.842Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "link": "link",
+        "_csrf": "OMbtWfsf-Ct1sB3wR_r5nm6MjoWCcWCaXaRk",
+        "id": 10,
+        "createdAt": "2016-02-20T17:21:54.584Z",
+        "updatedAt": "2016-02-20T17:21:54.584Z"
+      }
+    ]
+  },
+  "schema": {
+    "user": {
+      "name": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "encryptedPassword": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "video": {
+      "title": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "link": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "user": {
+      "id": 3
+    },
+    "video": {
+      "id": 10
+    }
+  }
+}

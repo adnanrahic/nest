@@ -1,0 +1,21 @@
+<div class="col-lg-offset-3 col-lg-6">
+    <form action="/video/create" method="POST" class="form-horizontal">
+   
+        <legend class="text-center">Add a new video</legend>
+        
+        <div class="form-group">
+            <input type="text" class="form-control" name="title" id="title" placeholder="Title">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="3" name="description" id="description" placeholder="Description"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="link" id="link" placeholder="YouTube Link">
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Submit">
+            <input type="hidden" name="_csrf" value="<%- _csrf %>">
+        </div>
+    
+    </form>
+</div>

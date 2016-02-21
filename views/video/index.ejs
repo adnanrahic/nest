@@ -1,0 +1,29 @@
+<h3>All Videos</h3>
+	<table class='table opaque'>
+		<tr>
+			<th>ID</th>
+			<th>Title</th>
+			<th>Description</th>
+			<th>URL</th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+        
+        <% _.each(videos, function(video) { %>
+		    <tr data-id="<%= video.id %>" data-model="video">
+            
+            <td><%= video.id %></td>
+			<td><%= video.title %></td>
+			<td><%= video.description %></td>
+			<td><%= video.URL %></td>
+            
+            <td><a href="/video/show/<%= video.id %>" class="btn btn-sm btn-primary">Show</a></td>
+			<td><a href="/video/edit/<%= video.id %>" class="btn btn-sm btn-warning">Edit</a></td>
+			<td><a href="/video/destroy/<%= video.id %>" class="btn btn-sm btn-danger">Delete</a></td>
+            
+            </tr> 
+
+		<% }) %>
+	</table>

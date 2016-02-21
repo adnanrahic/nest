@@ -1,0 +1,207 @@
+{
+  "data": {
+    "user": [
+      {
+        "name": "John Doe",
+        "createdAt": "2016-02-20T10:36:28.277Z",
+        "updatedAt": "2016-02-20T10:36:28.277Z",
+        "id": 1
+      },
+      {
+        "name": "John Notdoe",
+        "createdAt": "2016-02-20T10:40:03.784Z",
+        "updatedAt": "2016-02-20T10:40:03.784Z",
+        "id": 2
+      },
+      {
+        "name": "John debil",
+        "email": "jdoe@gmail.com",
+        "createdAt": "2016-02-20T10:44:47.143Z",
+        "updatedAt": "2016-02-20T10:44:47.143Z",
+        "id": 3
+      }
+    ],
+    "video": [
+      {
+        "title": "title",
+        "description": "desc",
+        "URL": "https://www.youtube.com/watch?v=3fJ-TdyZtKE",
+        "id": 1,
+        "createdAt": "2016-02-20T14:18:46.923Z",
+        "updatedAt": "2016-02-21T11:38:44.792Z"
+      },
+      {
+        "id": 2,
+        "createdAt": "2016-02-20T16:25:38.102Z",
+        "updatedAt": "2016-02-20T16:25:38.102Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "id": 3,
+        "createdAt": "2016-02-20T16:27:28.766Z",
+        "updatedAt": "2016-02-20T16:27:28.766Z"
+      },
+      {
+        "title": "title",
+        "id": 4,
+        "createdAt": "2016-02-20T16:53:30.854Z",
+        "updatedAt": "2016-02-20T16:53:30.854Z"
+      },
+      {
+        "id": 5,
+        "createdAt": "2016-02-20T16:55:03.063Z",
+        "updatedAt": "2016-02-20T16:55:03.063Z"
+      },
+      {
+        "id": 6,
+        "createdAt": "2016-02-20T17:00:08.324Z",
+        "updatedAt": "2016-02-20T17:00:08.324Z"
+      },
+      {
+        "id": 7,
+        "createdAt": "2016-02-20T17:02:50.080Z",
+        "updatedAt": "2016-02-20T17:02:50.080Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "id": 8,
+        "createdAt": "2016-02-20T17:08:56.182Z",
+        "updatedAt": "2016-02-20T17:08:56.182Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "id": 9,
+        "createdAt": "2016-02-20T17:10:22.842Z",
+        "updatedAt": "2016-02-20T17:10:22.842Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "id": 10,
+        "createdAt": "2016-02-20T17:21:54.584Z",
+        "updatedAt": "2016-02-20T17:21:54.584Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "id": 11,
+        "createdAt": "2016-02-21T01:21:24.368Z",
+        "updatedAt": "2016-02-21T01:21:24.368Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "id": 12,
+        "createdAt": "2016-02-21T01:43:03.173Z",
+        "updatedAt": "2016-02-21T01:43:03.173Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "id": 13,
+        "createdAt": "2016-02-21T02:19:04.943Z",
+        "updatedAt": "2016-02-21T02:19:04.943Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "id": 14,
+        "createdAt": "2016-02-21T02:34:51.363Z",
+        "updatedAt": "2016-02-21T02:34:51.363Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "id": 15,
+        "createdAt": "2016-02-21T02:51:37.568Z",
+        "updatedAt": "2016-02-21T02:51:37.568Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "id": 16,
+        "createdAt": "2016-02-21T03:01:34.634Z",
+        "updatedAt": "2016-02-21T03:01:34.634Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "URL": "https://www.youtube.com/watch?v=n6kVXDiXmiE",
+        "id": 17,
+        "createdAt": "2016-02-21T03:10:59.118Z",
+        "updatedAt": "2016-02-21T03:10:59.118Z"
+      },
+      {
+        "title": "title",
+        "description": "desc",
+        "URL": "https://www.youtube.com/watch?v=xdmuzyg50Vg",
+        "id": 18,
+        "createdAt": "2016-02-21T10:44:05.864Z",
+        "updatedAt": "2016-02-21T10:44:05.864Z"
+      }
+    ]
+  },
+  "schema": {
+    "user": {
+      "name": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "encryptedPassword": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "video": {
+      "title": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "URL": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "user": {
+      "id": 3
+    },
+    "video": {
+      "id": 18
+    }
+  }
+}

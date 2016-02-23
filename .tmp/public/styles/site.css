@@ -1,0 +1,25 @@
+body {
+font-size: 14px;
+line-height:1.3em;
+background: url("http://www.techandall.com/wp-content/uploads/2013/10/techandall_wallpaper_1.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.opaque{
+    background: rgba(84, 84, 84, 0.3); /* 70% transparent */
+    color: white;
+    border: 0px;
+	border-radius: 5px;
+}
+.opaque-form{
+    background: rgba(84, 84, 84, 0.3); /* 70% transparent */
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border: 0px;
+	border-radius: 5px;
+}

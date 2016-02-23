@@ -1,0 +1,30 @@
+<div class="col-lg-offset-3 col-lg-6">
+    <form action="/video/create" method="POST" class="form-horizontal opaque-form form">
+        <div>
+        <legend class="text-center" style="color: white;">Add a new video</legend>
+        
+        <div class="form-group">
+            <input type="text" class="form-control" name="title" id="title" placeholder="Title">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="3" name="description" id="description" placeholder="Description"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="URL" id="URL" placeholder="YouTube URL">
+        </div>
+        <div class="form-group">
+            <input type="hidden" name="_csrf" value="<%- _csrf %>">            
+            <input type="submit" class="btn btn-success pull-right" value="Submit" style="margin-top: 20px;">
+        </div>
+        </div>
+    </form>
+    
+    
+    <% if(flash && flash.err) { %>
+            <ul class="alert alert-succes">
+                <% Object.keys(flash.err).forEach(function(error) { %>
+                <li><%- JSON.stringify(flash.err[error]) %></li>
+                <% }) %>
+            </ul>
+        <% } %>
+</div>

@@ -1,32 +1,8 @@
-<!--<script>
-    function embedYouTubeVideo() {
-        player = new YT.Player('video', {
-            videoId: '3fJ-TdyZtKE',
-            playerVars: {'autoplay': 1}
-        });
-    }
-
-    function rewind() {
-        var currentTime = player.getCurrentTime();
-        player.seekTo(currentTime - 30, true);
-        player.playVideo();
-    }
-
-    function fastforward() {
-        var currentTime = player.getCurrentTime();
-        player.seekTo(currentTime + 30, true);
-        player.playVideo();  
-
-    }
-</script>-->
-
-
-
 <div class="card_margin_bottom">
     <div class="quick_card card">
         <div class="quick_card_name">
             <%= video.title %>
-        </div><hr>
+        </div><br>
         <div class="row">
             <div class="col s12 l9">
                 <div id="player"></div>
@@ -35,12 +11,14 @@
             <div class="col s12 l3">
                 <div class="row">
                     <div class="col s6">
-                        <button class="btn-floating btn-large waves-effect waves-light red" name="action" onclick="rewind()">-10s</button>
+                        <button class="btn-floating btn-large waves-effect waves-light red" name="action" onclick="rewind()"> <b>-10s</b> </button>
                     </div>
                     <div class="col s6">
-                        <button class="btn-floating btn-large waves-effect waves-light green" name="action" onclick="fastforward()">+10s</button>
+                        <button class="btn-floating btn-large waves-effect waves-light green" name="action" onclick="fastforward()"> <b>+10s</b> </button>
                     </div>
                 </div>
+                <br>
+                <div class="divider"></div>
                 <p class="center">Description</p>
                 <p><%= video.description %></p>
             </div>

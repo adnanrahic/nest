@@ -7,6 +7,8 @@
 }
 html{
     font-family: 'Roboto Mono', ;
+    color: rgba(0,0,0,0.71);
+    -webkit-font-smoothing: antialiased;
 }
 body{
 	margin:0;
@@ -18,16 +20,18 @@ body{
 a{
 	color:#303F9F; /* Change link color */
 	text-decoration:none;
+    transition: color .5s;
 }
-.title a:hover{
-	color:#7986CB; /* Change link color (on mouse over)*/
+.a-title:hover{
+	color:#3d5afe; /* Change link color (on mouse over)*/
+    transition: color .25;
 }
 footer a{
-    color:#1de9b6; 
+    color:#4DB6AC; 
 	text-decoration:none;
 }
 footer a:hover{
-    color:#64ffda; 
+    color:#1DE9B6; 
 }
 #blue_bg{
 	z-index:-1;
@@ -197,7 +201,7 @@ footer{
 	text-align:center;
 	text-align:center;
 	font-size:15px;
-	color:#aaa;
+	color:#ddd;
 	padding-bottom:10px;
 	font-weight: bold;
 }
@@ -401,4 +405,9 @@ nav ul li a{
 
 .margin-zero{
     margin-bottom: 0px;
+}
+
+.font-smooth{
+    color: rgba(0,0,0,0.71);
+    -webkit-font-smoothing: antialiased;
 }

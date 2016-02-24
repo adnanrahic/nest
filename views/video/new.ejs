@@ -10,39 +10,39 @@
 
 <div class="card_margin_bottom">
     <div class="card quick_card">
-    <div class="quick_card_name">
-        New
+        <div class="quick_card_name">
+            New
+        </div>
+        <div class="row margin-zero">
+            <form action="/video/create" method="POST" class="col s8 offset-s2 form">
+                <div class="row">
+                    <div class="input-field col s12">
+                    <input type="text" name="title" id="title1" class="validate">
+                    <label for="title1">Title</label>
+                    <label for="title">Title</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                    <textarea name="description" id="description" class="materialize-textarea"></textarea>
+                    <label for="description">Description</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                    <input type="url" name="URL" id="URL" class="validate">
+                    <label for="URL">URL</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                    <input type="hidden" name="_csrf" value="<%- _csrf %>">
+                    <!--<input type="submit" class="btn waves-effect waves-light" value="Submit">-->
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="row">
-    <form action="/video/create" method="POST" class="col s8 offset-s2 form">
-      <div class="row">
-        <div class="input-field col s12">
-          <input type="text" name="title" id="title1" class="validate">
-          <label for="title1">Title</label>
-          <label for="title">Title</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <textarea name="description" id="description" class="materialize-textarea"></textarea>
-          <label for="description">Description</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input type="url" name="URL" id="URL" class="validate">
-          <label for="URL">URL</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input type="hidden" name="_csrf" value="<%- _csrf %>">
-          <!--<input type="submit" class="btn waves-effect waves-light" value="Submit">-->
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
 </div>
 

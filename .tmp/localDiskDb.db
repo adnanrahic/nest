@@ -40,19 +40,19 @@
       },
       {
         "title": "PewDiePie",
-        "description": "On the Stever Colbert show",
+        "description": "On the Steven Colbert show",
         "URL": "https://www.youtube.com/watch?v=pM21uQR6G_Q",
         "id": 20,
         "createdAt": "2016-02-23T23:31:41.002Z",
-        "updatedAt": "2016-02-23T23:31:41.002Z"
+        "updatedAt": "2016-02-24T13:11:56.116Z"
       },
       {
-        "title": "3 cool new phones",
-        "description": "Austin Evans is reviewing 3 new smartphones for his new video in sdijoafsdgsadgascvasfdsffsdfsadfa",
+        "title": "3 cool new phones  lorem ipsum dolor simet lorem ipsum dolor simet  lorem ipsum dolor simet lorem ipsum dolor simet ",
+        "description": "Austin Evans is reviewing 3 new smartphones for his new video in lorem ipsum dolor simet lorem ipsum dolor simet lorem ipsum dolor simet ",
         "URL": "https://www.youtube.com/watch?v=MhgNwMQzWfI",
         "id": 21,
         "createdAt": "2016-02-24T00:47:25.207Z",
-        "updatedAt": "2016-02-24T01:17:53.878Z"
+        "updatedAt": "2016-02-24T15:57:00.827Z"
       }
     ]
   },

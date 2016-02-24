@@ -20,31 +20,34 @@
     <% _.each(videos, function(video) { %>
     <div data-id="<%= video.id %>" data-model="video">
         <div class="index_card_name">
-            <a href="/video/show/<%= video.id %>"><%= video.title %></a>
+            <!--<a href="/video/show/<%= video.id %>"><%= video.title %></a>-->
         </div>
         <div class="row">
             <div class="col s4">
-                <div style="max-width: 200px;"><%= video.description %></div>
+                <div class="desc" style="max-width: 300px;"><%= video.description %></div>
             </div>
             <div class="col s4">
-                <!--<iframe width="150" height="150"
-                src="<%= video.URL %>">
-                </iframe>-->
-                <!--<a href="<%= video.URL %>">Watch it on YouTube</a>-->
-                &nbsp;
+                <div class="title" style="max-width: 300px;">
+                    <a href="/video/show/<%= video.id %>"><%= video.title %></a>
+                </div>
             </div>
             <div class="col s4">
               <div class="row">
-                <div class="col s12 l6">
-                    <a href="/video/edit/<%= video.id %>" class="waves-effect waves-teal btn white black-text">Edit</a>
+                <div class="btn-box">
+                    <div class="col s12 l5">
+                    <a href="/video/edit/<%= video.id %>" class="index-btn waves-effect waves-light btn deep-purple lighten-1">Edit</a>
                 </div>
-                <div class="col s12 l6">
-                    <form action="/video/destroy/<%= video.id %>" method="POST">
+                <div class="col s12 l1">
+                    &nbsp;
+                </div>
+                <div class="col s12 l5">
+                    <form action="" method="POST">
                         <input type="hidden" name="_method" value="delete"/>
                         <!--<input type="submit" class="waves-effect waves-light btn red" value="Delete"/>-->
-                        <button class="btn white waves-effect waves-red black-text" type="submit" name="action">Delete</button>          
+                        <button class="index-btn btn waves-effect waves-light pink lighten-1" type="submit" name="action">Delete</button>          
                         <input type="hidden" name="_csrf" value="<%= _csrf %>" />
                     </form>
+                </div>
                 </div>
               </div>  
 

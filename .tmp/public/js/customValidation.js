@@ -22,7 +22,7 @@ $(document).ready(function(){
       //active navbar
       $('.nav li a').click(function() {
 
-        $('.nav li').removeClass('active');
+        $('.nav li a').removeClass('active');
 
         var $parent = $(this).parent();
         if (!$parent.hasClass('active')) {
@@ -31,4 +31,6 @@ $(document).ready(function(){
         //e.preventDefault();
     });
 
+
+    $(".button-collapse").sideNav();
 });

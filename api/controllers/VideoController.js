@@ -42,7 +42,8 @@ module.exports = {
             if (!video) return next();
             
             var url = video.URL; 
-            url = url.replace("watch?v=", "v/");
+            //url = url.replace("watch?v=", "v/");
+            url = url.replace("https://www.youtube.com/watch?v=", "");
             
             video.URL = url;
             
@@ -86,5 +87,22 @@ module.exports = {
         res.redirect('/video/show/' + req.param('id'));
         });
     },
+    
+    destroy: function(req, res, next) {
+
+        Video.findOne(req.param('id'), function foundVideo(err, video) {
+        if (err) return next(err);
+
+        if (!video) return next('Video doesn\'t exist.');
+
+        Video.destroy(req.param('id'), function videoDestroyed(err) {
+            if (err) return next(err);
+
+        });        
+
+        res.redirect('/video');
+
+        });
+  }
 };
 

@@ -1,21 +1,37 @@
-<div class="col-lg-offset-3 col-lg-6">
-    <form action="/video/update/<%= video.id %>" method="POST" class="form-horizontal opaque-form form">
-        <div>
-        <legend class="text-center" style="color: white;">Edit video</legend>
-        
-        <div class="form-group">
-            <input type="text" class="form-control" name="title" value="<%= video.title %>">
+<div class="card_margin_bottom">
+<div class="card quick_card">
+    <div class="quick_card_name">
+        Edit
+    </div>
+    <div class="row">
+    <form action="/video/update/<%= video.id %>" method="POST" class="col s8 offset-s2 form">
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" name="title" id="title1" class="validate" value="<%= video.title %>">
+          <label for="title1">Title</label>
+          <label for="title">Title</label>
         </div>
-        <div class="form-group">
-            <textarea class="form-control" rows="3" name="description"><%= video.description %></textarea>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea name="description" id="description" class="materialize-textarea"><%= video.description %></textarea>
+          <label for="description">Description</label>
         </div>
-        <div class="form-group">
-            <input type="text" class="form-control" name="URL" value="<%= video.URL %>">
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="url" name="URL" id="URL" class="validate" value="<%= video.URL %>">
+          <label for="URL">URL</label>
         </div>
-        <div class="form-group">
-            <input type="hidden" name="_csrf" value="<%- _csrf %>">            
-            <input type="submit" class="btn btn-success pull-right" value="Submit" style="margin-top: 20px;">
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="hidden" name="_csrf" value="<%- _csrf %>">
+          <!--<input type="submit" class="btn waves-effect waves-light" value="Submit">-->
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
         </div>
-        </div>
+      </div>
     </form>
+  </div>
+</div>
 </div>

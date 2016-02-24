@@ -23,124 +23,36 @@
     ],
     "video": [
       {
-        "title": "title",
-        "description": "desc",
-        "URL": "https://www.youtube.com/watch?v=3fJ-TdyZtKE",
-        "id": 1,
-        "createdAt": "2016-02-20T14:18:46.923Z",
-        "updatedAt": "2016-02-21T11:38:44.792Z"
-      },
-      {
-        "id": 2,
-        "createdAt": "2016-02-20T16:25:38.102Z",
-        "updatedAt": "2016-02-20T16:25:38.102Z"
-      },
-      {
-        "title": "title",
-        "description": "desc",
-        "id": 3,
-        "createdAt": "2016-02-20T16:27:28.766Z",
-        "updatedAt": "2016-02-20T16:27:28.766Z"
-      },
-      {
-        "title": "title",
-        "id": 4,
-        "createdAt": "2016-02-20T16:53:30.854Z",
-        "updatedAt": "2016-02-20T16:53:30.854Z"
-      },
-      {
-        "id": 5,
-        "createdAt": "2016-02-20T16:55:03.063Z",
-        "updatedAt": "2016-02-20T16:55:03.063Z"
-      },
-      {
-        "id": 6,
-        "createdAt": "2016-02-20T17:00:08.324Z",
-        "updatedAt": "2016-02-20T17:00:08.324Z"
-      },
-      {
-        "id": 7,
-        "createdAt": "2016-02-20T17:02:50.080Z",
-        "updatedAt": "2016-02-20T17:02:50.080Z"
-      },
-      {
-        "title": "title",
-        "description": "desc",
-        "id": 8,
-        "createdAt": "2016-02-20T17:08:56.182Z",
-        "updatedAt": "2016-02-20T17:08:56.182Z"
-      },
-      {
-        "title": "title",
-        "description": "desc",
-        "id": 9,
-        "createdAt": "2016-02-20T17:10:22.842Z",
-        "updatedAt": "2016-02-20T17:10:22.842Z"
-      },
-      {
-        "title": "title",
-        "description": "desc",
-        "id": 10,
-        "createdAt": "2016-02-20T17:21:54.584Z",
-        "updatedAt": "2016-02-20T17:21:54.584Z"
-      },
-      {
-        "title": "title",
-        "description": "desc",
-        "id": 11,
-        "createdAt": "2016-02-21T01:21:24.368Z",
-        "updatedAt": "2016-02-21T01:21:24.368Z"
-      },
-      {
-        "title": "title",
-        "description": "desc",
-        "id": 12,
-        "createdAt": "2016-02-21T01:43:03.173Z",
-        "updatedAt": "2016-02-21T01:43:03.173Z"
-      },
-      {
-        "title": "title",
-        "description": "desc",
-        "id": 13,
-        "createdAt": "2016-02-21T02:19:04.943Z",
-        "updatedAt": "2016-02-21T02:19:04.943Z"
-      },
-      {
-        "title": "title",
-        "description": "desc",
-        "id": 14,
-        "createdAt": "2016-02-21T02:34:51.363Z",
-        "updatedAt": "2016-02-21T02:34:51.363Z"
-      },
-      {
-        "title": "title",
-        "description": "desc",
-        "id": 15,
-        "createdAt": "2016-02-21T02:51:37.568Z",
-        "updatedAt": "2016-02-21T02:51:37.568Z"
-      },
-      {
-        "title": "title",
-        "description": "desc",
-        "id": 16,
-        "createdAt": "2016-02-21T03:01:34.634Z",
-        "updatedAt": "2016-02-21T03:01:34.634Z"
-      },
-      {
-        "title": "title",
-        "description": "desc",
+        "title": "Heath Ledger",
+        "description": "8 little known facts",
         "URL": "https://www.youtube.com/watch?v=n6kVXDiXmiE",
         "id": 17,
         "createdAt": "2016-02-21T03:10:59.118Z",
-        "updatedAt": "2016-02-21T03:10:59.118Z"
+        "updatedAt": "2016-02-24T00:50:52.742Z"
       },
       {
-        "title": "title",
-        "description": "desc",
+        "title": "MKBHD",
+        "description": "Best smartphone of 2016",
         "URL": "https://www.youtube.com/watch?v=xdmuzyg50Vg",
         "id": 18,
         "createdAt": "2016-02-21T10:44:05.864Z",
-        "updatedAt": "2016-02-21T10:44:05.864Z"
+        "updatedAt": "2016-02-24T00:39:28.271Z"
+      },
+      {
+        "title": "PewDiePie",
+        "description": "On the Stever Colbert show",
+        "URL": "https://www.youtube.com/watch?v=pM21uQR6G_Q",
+        "id": 20,
+        "createdAt": "2016-02-23T23:31:41.002Z",
+        "updatedAt": "2016-02-23T23:31:41.002Z"
+      },
+      {
+        "title": "3 cool new phones",
+        "description": "Austin Evans is reviewing 3 new smartphones for his new video in sdijoafsdgsadgascvasfdsffsdfsadfa",
+        "URL": "https://www.youtube.com/watch?v=MhgNwMQzWfI",
+        "id": 21,
+        "createdAt": "2016-02-24T00:47:25.207Z",
+        "updatedAt": "2016-02-24T01:17:53.878Z"
       }
     ]
   },
@@ -201,7 +113,7 @@
       "id": 3
     },
     "video": {
-      "id": 18
+      "id": 21
     }
   }
 }

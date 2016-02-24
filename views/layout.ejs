@@ -5,7 +5,8 @@
 
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
 
     <!--
         Stylesheets and Preprocessors
@@ -29,44 +30,50 @@
     -->
 
     <!--STYLES-->
-    <link rel="stylesheet" href="/styles/bootstrap.css">
+    <link rel="stylesheet" href="/styles/font-awesome.css">
+    <link rel="stylesheet" href="/styles/font-awesome.min.css">
     <link rel="stylesheet" href="/styles/importer.css">
+    <link rel="stylesheet" href="/styles/materialize.min.css">
     <link rel="stylesheet" href="/styles/site.css">
     <!--STYLES END-->
   </head>
-
-  <body>
-      <nav class="navbar navbar-default opaque">
-        <div class="container-fluid">
-            <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Nest71</a>
-        </div>
-            
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/video">All Videos</a></li>
-                <li><a href="/video/new">Add New</a></li>
-            </ul>
-        </div>
-      </div>
-     </nav>
-      
-    <div class="container">  
-        <%- body %>
-    </div>
+  <body>    
     
-    <footer class="footer opaque" style="bottom:0px;position: fixed;width:100%;padding-top: 5px;margin-bottom: -7px;">
-        <div class="container">
-            <p class="pull-right">Nest71 | Sails.js</p>
-        </div>
+    
+
+
+   <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="/" class="brand-logo right">Nest71</a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/video">All Videos</a></li>
+        <li><a href="/video/new">Add New</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/video">All Videos</a></li>
+        <li><a href="/video/new">Add New</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+          <!--start body-->
+          <!--<div class="">  -->
+            <%- body %>
+          <!--</div>-->
+          <!--end body-->
+          
+    <footer>
+    <p><a href="http://www.sailsjs.org">Sails.js</a> App for <a href="http://www.nest71.com/">Nest71</a>, by <a href="https://github.com/adnanrahic">adnanrahic</a>.</p>
     </footer>
+
+      
+
+    
     
     
     <!--
@@ -122,9 +129,8 @@
     <script src="/js/dependencies/sails.io.js"></script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/jquery.validate.min.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
     <script src="/js/customValidation.js"></script>
+    <script src="/js/materialize.min.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>

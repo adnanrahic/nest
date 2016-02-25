@@ -79,10 +79,10 @@ footer a:hover{
 }
 
 .index_card{
-    padding-top: 25px;
+    padding-top: 3px;
     padding-right: 25px;
     padding-left: 25px;
-	margin-top:22px;
+	margin-top: 3px;
 	text-align:center;
 }
 #index_card #photo{
@@ -315,6 +315,7 @@ text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     margin:0.5rem 0 1rem 0;
+    font-size: 14px;
 }
 .transparent{
     background: rgba(1, 1, 1, 0); /* 100% transparent */  
@@ -410,4 +411,10 @@ nav ul li a{
 .font-smooth{
     color: rgba(0,0,0,0.71);
     -webkit-font-smoothing: antialiased;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
 }
